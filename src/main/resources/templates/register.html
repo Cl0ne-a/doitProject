@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form action="#" th:action="@{/register}" th:object="${DBUser}" method="post">
+        <p>User Name: <input type="text" th:field="*{userName}"/></p>
+        <p>User Password: <input type="password" th:field="*{userPassword}"/></p>
+        <p>User Age: <input type="number" th:field="*{age}"/></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<!--<script>-->
+<!--    $(function() {-->
+<!--        $("#join_datepicker").datepicker({dateFormat:"yy-mm-dd"});-->
+<!--        $("#retire_datepicker").datepicker({dateFormat:"yy-mm-dd"});-->
+<!--    });-->
+<!--</script>-->
+</body>
+</html>

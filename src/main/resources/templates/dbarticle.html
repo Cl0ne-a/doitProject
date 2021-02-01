@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Articles</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<table style="width: auto">
+    <tr>
+        <th>ID</th>
+        <th>TEXT</th>
+        <th>COLOUR</th>
+    </tr>
+            <tr th:each = "dbarticle: ${com.project.doit.DBArticle}" >
+                <td th:text="${com.project.doit.DBArticle.id}"></td>
+                <td th:text="${com.project.doit.DBArticle.text}"></td>
+                <td th:text="${com.project.doit.DBArticle.colour}"></td>
+            </tr>
+</table>
+</body>
+</html>

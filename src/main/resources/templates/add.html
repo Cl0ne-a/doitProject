@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Article</h1>
+<form action="#" th:action="@{/add.html}" th:object="${com.project.doit.DBArticle}" method="post">
+    <p>Colour: <input type="textr" th:field="*{colour}"/></p>
+    <p>Text: <input type="text" th:field="*{text}"/></p>
+
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
